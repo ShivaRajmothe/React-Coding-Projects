@@ -10,9 +10,9 @@ export default function Counter() {
   return (
     <div style={{ fontFamily: "sans-serif" }}>
       <h2>Counter: {count}</h2>
-      <button onClick={decrement}>-</button>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
       <button onClick={reset}>Reset</button>
-      <button onClick={increment}>+</button>
     </div>
   );
 }
