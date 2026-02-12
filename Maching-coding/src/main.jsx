@@ -6,12 +6,14 @@ import Accordion from './Accordion.jsx'
 import Counter from './Counter.jsx'
 import EvenOrOddChecker from './EvenorOdd.jsx'
 import UsersList from './UsersList.jsx'
+import Products from './Products.jsx'
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <>
     {/* <App /> */}
     {/* <Accordion />
     <Counter /> */}
     {/* <EvenOrOddChecker /> */}
-    <UsersList />
-  </StrictMode>,
+  {/* <UsersList /> */}
+    <Products />
+ </>
 )
