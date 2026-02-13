@@ -4,9 +4,9 @@ import './index.css'
 import App from './App.jsx'
 import Accordion from './Accordion.jsx'
 import Counter from './Counter.jsx'
-import EvenOrOddChecker from './EvenorOdd.jsx'
 import UsersList from './UsersList.jsx'
 import Products from './Products.jsx'
+import TodoList from './TodoList.jsx'
 createRoot(document.getElementById('root')).render(
   <>
     {/* <App /> */}
@@ -14,6 +14,7 @@ createRoot(document.getElementById('root')).render(
     <Counter /> */}
     {/* <EvenOrOddChecker /> */}
   {/* <UsersList /> */}
-    <Products />
+    {/* <Products /> */}
+    <TodoList />
  </>
 )
