@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import React from "react";
 
 
 function TodoList() {
@@ -9,14 +8,28 @@ function TodoList() {
   const addTodoList = () => {
     if (inputValue.trim() === "") return;
     const newTodo = {
-      id: 0, // You can generate a unique ID here if needed
+      id: todos.length+1, // You can generate a unique ID here if needed
       text: inputValue,
-      completed: true
+      completed: false
     };
     setTodos([...todos, newTodo]);
     setInputValue("");
   };
 
+  const toggleCompleted = (id) => {{
+    setTodos(todos.map  (todo => {
+      if (todo.id === id) {
+        return { ...todo, completed: !todo.completed };
+      }
+      else{
+        return todo;
+      }
+    }))
+  }
+  }
+  const deleteTodo = (id) => {
+    setTodos(todos.filter(todo => todo.id !== id));
+  }
   return (
     <div>
       <h1>Todo List</h1>
@@ -30,9 +43,9 @@ function TodoList() {
       <ul>
         {todos.map((todo) => (
           <li key={todo.id}>
-            <input type="checkbox"  checked={todo.completed}/>
+            <input type="checkbox"  checked={todo.completed} onChange={ ()=> toggleCompleted(todo.id)}/>
            <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>{todo.text}</span>
-            <button> Delete</button>
+            <button onClick={() => deleteTodo(todo.id)}> Delete</button>
           </li>
         ))}
       </ul>
