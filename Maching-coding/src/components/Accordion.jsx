@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa"; 
-import './styles.css'
+import '../../src/styles.css';
   
 
 
