@@ -6,7 +6,8 @@ import Accordion from '../src/components/Accordion.jsx'
 import Counter from '../src/components/Counter.jsx'
 import UsersList from '../src/components/UsersList.jsx'
 import Products from '../src/components/Products.jsx'
-import TodoList from '../src//components/TodoList.jsx'
+import TodoList from '../src/components/TodoList.jsx'
+import AutoSearch from '../src/components/AutoSearch.jsx'
 createRoot(document.getElementById('root')).render(
   <>
     {/* <App />  */}
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
   {/* <UsersList /> 
     <Products /> */}
     <TodoList />
+    <AutoSearch />
 
  </>
 )

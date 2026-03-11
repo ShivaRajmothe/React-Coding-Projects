@@ -66,3 +66,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+search-input
+{
+  width: 500px;
+  padding: 5px;
+}
+.results-container
+{
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+  text-align: left;
+  padding: 5px;
+  overflow-y: scroll;
+}
+.results
+{
+  display: block;
+  padding: 5px;
+}
