@@ -8,15 +8,17 @@ import UsersList from '../src/components/UsersList.jsx'
 import Products from '../src/components/Products.jsx'
 import TodoList from '../src/components/TodoList.jsx'
 import AutoSearch from '../src/components/AutoSearch.jsx'
+import Pagination from './components/Pagination.jsx'
 createRoot(document.getElementById('root')).render(
   <>
     {/* <App />  */}
-     <Accordion />
-    <Counter />
      {/* <EvenOrOddChecker /> */} 
   {/* <UsersList /> 
-    <Products /> */}
-    <TodoList />
+    <Products /> 
+     <Accordion /><Counter />
+      <TodoList />
+    */}
+   <Pagination />
     <AutoSearch />
 
  </>
