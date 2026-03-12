@@ -9,6 +9,7 @@ import Products from '../src/components/Products.jsx'
 import TodoList from '../src/components/TodoList.jsx'
 import AutoSearch from '../src/components/AutoSearch.jsx'
 import Pagination from './components/Pagination.jsx'
+import ProgressBar from './components/ProgressBar.jsx'
 createRoot(document.getElementById('root')).render(
   <>
     {/* <App />  */}
@@ -18,8 +19,9 @@ createRoot(document.getElementById('root')).render(
      <Accordion /><Counter />
       <TodoList />
     */}
-   <Pagination />
-    <AutoSearch />
+   {/* <Pagination />
+    <AutoSearch /> */}
+      <ProgressBar progress={70} />
 
  </>
 )
